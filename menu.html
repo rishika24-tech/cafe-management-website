@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Menu_CAFE</title>
+	<link rel="stylesheet" type="text/css" href="css/menu.css">
+  <link rel="stylesheet" href="css/menu2.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css?family=Flamenco&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+ 
+<script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+
+
+</head>
+<body>
+   <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+
+ <header>
+     <nav>
+       <div class="row clearfix">
+       	    <img src="imgs/logo.png" class="logo">
+
+       	 <ul class="main-nav animated slideInDown" id="check-class">
+       	 	<li><a href="Home.html">HOME</a></li>
+       	 	<li><a href="Menu.html">MENU</a></li>
+       	 	<li><a href="About.html">ABOUT</a></li>
+       	 	<li><a href="Contact.html">CONTACT US</a></li>	
+       	 </ul> 
+         <a href="#" class="mobile-icon"  onclick="slideshow()"> <i class="fa fa-bars"></i></a>
+       </div>	
+     </nav>
+     <br>
+
+     <div class="main-content-header">
+
+<div class="row" style="text-align: center; margin-bottom: 5%;">
+        <div class="col">
+          <button style="margin-right: 5px; width:25%;" type="button" class="btn btn-primary" data-toggle="modal" data-target="#cart">Your Orders (<span class="total-count"></span>)</button>
+          <button style="margin-right: 5px; width:25%;" class="clear-cart btn btn-danger">Clear Orders </button></div>
+    </div>
+
+      <form class="example" action="action_page.php">
+  <input type="text" placeholder="Search.." name="search">
+  <button type="submit"><i class="fa fa-search"></i></button>
+</form>
+<br>
+  <h1>M E N U</h1>
+  <br>
+     <button class="tablink" onclick="openPage('COFFEES', this, '#bf55ec')">COFFEES</button>
+<button class="tablink" onclick="openPage('FOODS', this, '#bf55ec')" >FOODS</button>
+<button class="tablink" onclick="openPage('CAKES', this, '#bf55ec') "id="defaultOpen">CAKES</button>
+<button class="tablink" onclick="openPage('JUICES', this, '#bf55ec')">JUICES</button>
+
+
+<div id="COFFEES" class="tabcontent">
+  <h3>COFFEES</h3>
+  <br>
+  <hr>
+  
+<div class="row">
+  <div class="column" >
+    <h2>RISTRETTO</h2>
+    <p>A small, very strongly flavoured coffee.</p>
+  <p style="font-family: body; color: #bf55ec;">RS 145</p>
+  <a  style="font-family: body; text-decoration: none;" href="#" data-name="RISTRETTO" data-price="145" class="add-to-cart btn btn-primary" onclick="myFunction()">Add to Order</a>
+  </div>
+
+  <div class="column" >
+    <h2>HOT CHOCOLATE</h2>
+    <p>A big nourishing, wholesome cup of whole milk — really chocolaty & frothy.</p>
+    <p style="font-family: body; color: #bf55ec;">RS 225</p>
+    <a style="font-family: body; text-decoration: none;" href="#" data-name="HOT CHOCOLATE" data-price="225" class="add-to-cart btn btn-primary" onclick="myFunction()">Add to Order</a>
+  </div>
+</div>
